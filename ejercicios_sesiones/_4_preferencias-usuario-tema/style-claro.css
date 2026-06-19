@@ -1,0 +1,9 @@
+:root{
+    --cl-1: #fff;
+    --cl-2: #000;
+}
+
+*{
+    background: var(--cl-1);
+    color: var(--cl-2);
+}

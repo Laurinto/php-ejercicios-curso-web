@@ -1,0 +1,42 @@
+:root{
+    --cl-1:#d0d3ee;
+    --cl-2:#0a092e;
+    --cl-3:#808dd8;
+    --cl-4:#1f22bb;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    color: var(--cl-2);
+    font-family: "Arial";
+}
+
+html{
+    background: var(--cl-1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+form{
+    padding: 1em;
+    background-color: var(--cl-3);
+    border-radius: 1em;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+button, input{border-radius: 0.5em;}
+
+button{
+    max-width: 10em;
+}
+
+input{
+    padding: 0.25em;
+    border: transparent;
+}

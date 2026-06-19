@@ -1,0 +1,3 @@
+Titulo 1|16-06-2024|Madrid|304869
+Titulo 2|16-06-2025|Valencia|37405
+Titulo 3|16-06-2026|Malaga|29834

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de unidades</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Conversor de unidades</h1>
+    
+    <form action="" method="post">
+        <section>
+            <select name="elegir-conversion" id="">
+                <option value="km_m">Kilómetros a metros</option>
+                <option value="m_km">Metros a kilómetros</option>
+                <option value="km_mi">Kilómetros a millas</option>
+                <option value="mi_km">Millas a kilómetros</option>
+                <option value="kg_g">Kilogramos a gramos</option>
+                <option value="g_kg">Gramos a kilogramos</option>
+                <option value="kg_lb">Kilogramos a libras</option>
+                <option value="lb_kg">Libras a kilogramos</option>
+                <option value="c_f">Celsius (Cº) a Fahrenheit (Fº)</option>
+                <option value="f_c">Fahrenheit (Fº) a Celsius (Cº)</option>
+            </select>
+        </section>
+        <section>
+            <input type="number" name="valor" step="any">
+            <button type="submit">CALCULAR</button>
+        </section>
+    </form>
+</body>
+</html>
+
+<!--
+QUE DEBE MOSTRAR:
+- «15 km = 15.000 m» o «98,6 °F = 37,00 °C».
+- Enlace «← Volver al conversor»
+- Si el valor no es numérico o está vacío: mensaje de error claro y enlace para volver.
+-->

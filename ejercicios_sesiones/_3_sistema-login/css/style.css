@@ -1,0 +1,96 @@
+:root{
+    --cl-1: #08090c; /*texto*/
+    --cl-2: #aeb0c6; /*fondo principal*/
+    --cl-3: #757083; /*color acentuación*/
+    --cl-4: #474056; /*footer*/
+    --cl-5: #d2d3e6c0; /*fondo 2*/
+    
+    --cl-alerta: #b83939;
+}
+
+@font-face {
+    font-family: "Stack Sans Headline";
+    src: url(../fonts/StackSansHeadline-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: "Stack Sans Headline";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{font-size: 0.75em;}
+
+footer{
+    background: var(--cl-4);
+    color: var(--cl-2);
+}
+
+html{
+    height: 100vh;
+    background: linear-gradient(0deg, var(--cl-3) 0%, var(--cl-2) 100%);
+    color: var(--cl-1);
+}
+
+html{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+main{
+    backdrop-filter: blur(3em);
+    background: var(--cl-5);
+    border-radius: 1em;
+    padding: 2em;
+    width: 300px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25em;
+}
+
+button{
+    cursor: pointer;
+}
+
+form > p{
+    width: 100%;
+    text-align: left;
+}
+form > input, form > button, form > a > button{
+    width: 100%;
+    border: transparent;
+    border-radius: 0.75em;
+    padding: 0.5em;
+}
+
+form > button, form > a > button{
+    background: var(--cl-4);
+    color: var(--cl-5);
+    margin: 1em 0;
+}
+
+form > button:hover, form > a > button:hover{
+    background: var(--cl-3);
+}
+
+footer{
+    background: var(--cl-4);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    padding: 1em;
+    text-align: center;
+}
+
+.alerta{
+    color: var(--cl-alerta);
+    text-align: center;
+}
