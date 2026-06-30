@@ -110,5 +110,5 @@ $l4->prestar();
 </html>
 
 <!--
-localhost/clase_ejercicios/ejercicios_poo/ejercicio_poo_1.php
+enlace local -> localhost/php-ejercicios-curso-web/ejercicios_poo/ej-poo-1/ej-poo-1.php
 -->
