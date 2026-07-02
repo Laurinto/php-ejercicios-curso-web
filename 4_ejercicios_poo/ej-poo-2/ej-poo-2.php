@@ -45,17 +45,7 @@ $p3 = new Producto('Monitor 27"',299.00,3);
 
 // resultados
 
-// stock viejo
-echo $p1->ficha();
-echo $p1->precioConIva() . '€ con IVA';
 
-// actualizando stock, con nº 3 de ejemplo
-$p1->reducirStock(3); // el 3 es para darle valor a $n
-// stock nuevo
-echo $p1->ficha();
-
-// ejemplo de stock con error
-$p2->setPrecio(-10);
 ?>
 
 <!DOCTYPE html>
@@ -64,9 +54,22 @@ $p2->setPrecio(-10);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase producto con constructor y private</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+    <h2>Ejemplo hecho por completo</h2>
+    <!-- stock viejo -->
+    <p><?php echo $p1->ficha(); ?></p>
+    <p><?php echo $p1->precioConIva() . '€ con IVA'; ?></p>
+    <!-- actualizando stock, con nº 3 de ejemplo -->
+    <p><?php $p1->reducirStock(3); ?></p> <!-- el 3 es para darle valor a $n -->
+    <!-- stock nuevo -->
+    <p><?php echo $p1->ficha(); ?></p>
     
+    <h2>Ejemplo con error</h2>
+    <p><?php $p2->setPrecio(-10); ?></p>
+
+    <script src"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 
