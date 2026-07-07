@@ -12,6 +12,7 @@ $accion = $_GET['accion'] ?? 'listar';
 switch ($pagina) {
     case 'notas':
         require_once 'controllers/notas_controllers.php';
+        $modelo = new Nota();
 
         // Mapa de acciones válidas → función correspondiente
         // Seguridad: solo se pueden llamar funciones de esta lista
@@ -28,7 +29,7 @@ switch ($pagina) {
 
         if (isset($acciones[$accion])) {
             $funcion = $acciones[$accion];
-            $funcion(); // llamar a la función por su nombre
+            $funcion($modelo); // llamar a la función por su nombre
         } else {
             accion_listar();
         }
