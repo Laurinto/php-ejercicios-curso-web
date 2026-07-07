@@ -9,10 +9,9 @@
 <body class="mx p-3">
     <main>
         <section>
-            <a href="index.php?accion_crear">Nuevo alumno</a>
+            <a href="index.php?accion=crear">Nuevo alumno</a>
         </section>
         <section>
-            
                 <table class="table">
                     <!--meter la tabla con las cosas-->
                     <thead>

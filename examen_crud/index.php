@@ -23,5 +23,4 @@ else{
 
 <!--
 enlace: /localhost/php-ejercicios-curso-web/examen_crud/
-enlace en examen: /localhost/examen_crud/
 -->

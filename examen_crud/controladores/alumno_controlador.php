@@ -10,8 +10,7 @@ function accion_listar(Alumno $modelo) :void{
 }
 
 function accion_crear(Alumno $modelo) :void{
-    // pagina que mostrará
-    require __DIR__ . '/../vistas/alumno_formulario.php';
+    
     // elementos para el POST
     $nombre = trim($_POST['nombre'] ?? '');
     $apellidos = trim($_POST['apellidos'] ?? '');
@@ -19,8 +18,11 @@ function accion_crear(Alumno $modelo) :void{
     $curso = trim($_POST['curso'] ?? '');
     if($nombre && $apellidos && $email && $curso){
         $modelo->crear($nombre, $apellidos, $email, $curso);
-    }
-    header('Location:index.php');
-    exit;
+        header('Location:index.php');
+        exit;
+        }
+    
+    // pagina que mostrará
+    require __DIR__ . '/../vistas/alumno_formulario.php';
 }
 ?>
